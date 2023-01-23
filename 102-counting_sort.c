@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	return (p);
 }
 /**
- * counting_sort - this is a counting sort method implementation
+ * counting_sort - this is a counting sort method
  * @array: array to sort
  * @size: array size
  */

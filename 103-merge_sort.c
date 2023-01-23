@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 /**
  *merge - make a merge
  *@arr: one from start to mid
- *@tmp: temp array used in merge, was created outside to
+ *@tmp: temp array used in merge, was created outside
  *optimize reducing the system calls
  *@start: first element position
  *@mid: array middle
@@ -68,7 +68,7 @@ void merge(int *arr, int *tmp, int start, int mid, int end)
 	print_array(&arr[start], left + right);
 }
 /**
- *mergesort - function that sorts an array of integers
+ *mergesort - function that sorts an array
  *in ascending order using the Merge sort algorithm
  *@array: array of integers
  *@tmp: temp array used in merge, was created outside to
@@ -92,7 +92,7 @@ void mergesort(int *array, int *tmp, int start, int end)
 	}
 }
 /**
- *merge_sort - function that sorts an array of integers
+ *merge_sort - function that sorts an array
  *in ascending order using the Merge sort algorithm
  *@size: size of the list
  *@array: array of integers
