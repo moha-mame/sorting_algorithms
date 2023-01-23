@@ -4,7 +4,7 @@
  *swap_node - swap a node for his previous one
  *@node: node
  *@list: node list
- *Return: return a pointer to a node which was enter it
+ *Return: return a pointer
  */
 listint_t *swap_node(listint_t *node, listint_t **list)
 {
@@ -24,7 +24,7 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 	return (current);
 }
 /**
- *cocktail_sort_list - this is a cocktail sort implementation
+ *cocktail_sort_list - this is a cocktail sort
  *working on a double linked lists
  *@list: list
  */
