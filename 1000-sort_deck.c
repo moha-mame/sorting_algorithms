@@ -23,7 +23,7 @@ int _strcmp(const char *str1, char *str2)
 	return (1);
 }
 /**
- * get_card_position - return the position based on card you put in
+ * get_card_position - return the position based
  * @node: represent the card
  * Return: return the card position
  */
@@ -112,4 +112,3 @@ void sort_deck(deck_node_t **deck)
 {
 	insertion_sort_deck(deck);
 }
-
