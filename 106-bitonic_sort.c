@@ -19,7 +19,7 @@ void swap(int arr[], int item1, int item2, int order)
 	}
 }
 /**
- * merge - sort bitonic sequences recursively in both orders
+ * merge - sort bitonic sequences recursively
  * @arr: array
  * @low: first element
  * @nelemnt: elements number

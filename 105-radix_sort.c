@@ -1,7 +1,7 @@
 #include "sort.h"
 #include <stdio.h>
 /**
-* getMax - A utility function to get maximum value in arr[]
+* getMax - A utility function to get maximum value
 * @arr: array
 * @n: size of the array
 * Return: array
@@ -17,8 +17,7 @@ int getMax(int *arr, int n)
 }
 
 /**
-* countSort - A function to do counting sort of arr[] according to
-* the digit represented by exp.
+* countSort - A function to do counting sort of arr[] according
 * @arr: array
 * @n: size of the array
 * @exp: exp is 10^i
@@ -35,7 +34,6 @@ void countSort(int *arr, size_t n, int exp, int *output)
 
 	/*
 	* Change count[i] so that count[i] now contains actual
-    * position of this digit in output[]
 	*/
 	for (i = 1; i < 10; i++)
 		count[i] += count[i - 1];
@@ -49,7 +47,6 @@ void countSort(int *arr, size_t n, int exp, int *output)
 
 	/*
 	* Copy the output array to arr[], so that arr[] now
-    * contains sorted numbers according to current digit
 	*/
 	for (i = 0; i < (int)n; i++)
 		arr[i] = output[i];
@@ -76,9 +73,7 @@ void radix_sort(int *array, size_t size)
 	if (output == '\0')
 		return;
 	/*
-	* Do counting sort for every digit. Note that instead
-    * of passing digit number, exp is passed. exp is 10^i
-    * where i is current digit number
+	* Do counting sort for every digit. 
 	*/
 	for (exp = 1; maximum / exp > 0; exp *= 10)
 	{
