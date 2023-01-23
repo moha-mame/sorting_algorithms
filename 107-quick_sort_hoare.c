@@ -14,7 +14,7 @@ void swap(int *array, ssize_t item1, ssize_t item2)
 	array[item2] = tmp;
 }
 /**
- *hoare_partition - hoare partition sorting scheme implementation
+ *hoare_partition - hoare partition sorting scheme
  *@array: array
  *@first: first array element
  *@last: last array element
@@ -60,7 +60,7 @@ void qs(int *array, ssize_t first, ssize_t last, int size)
 	}
 }
 /**
- *quick_sort_hoare - prepare the terrain to quicksort algorithm
+ *quick_sort_hoare - prepare the terrain to quicksort
  *@array: array
  *@size: array size
  */
