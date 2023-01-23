@@ -16,8 +16,6 @@ void swap(int *a, int *b)
 
 /**
  * maxHeapify - The main function to heapify a Max Heap. The function
- * assumes that everything under given root (element at index idx)
- * is already heapified
  * @array: array
  * @size: size of the array for print
  * @idx: index
@@ -35,7 +33,6 @@ void maxHeapify(int *array, size_t size, int idx, size_t n)
 
 	/**
 	 * See if right child of root exists and is greater than
-     *the largest so far
 	 */
 	if (right < (int)n && array[right] > array[largest])
 		largest = right;
@@ -59,7 +56,6 @@ void heap_sort(int *array, size_t size)
 	int i;
 	/**
 	 * Start from bottommost and rightmost internal mode and heapify all
-     * internal modes in bottom up way
 	 */
 	if (array == '\0' || size < 2)
 		return;
@@ -69,14 +65,11 @@ void heap_sort(int *array, size_t size)
 
 	/**
 	* Repeat following steps while heap size is greater than 1.
-    * The last element in max heap will be the minimum element
 	*/
 	for (i = (size - 1); i > 0; --i)
 	{
 		/**
-		* The largest item in Heap is stored at the root. Replace
-		*it with the last item of the heap followed by reducing the
-		*size of heap by 1.
+		* The largest item in Heap is stored at the root.
 		*/
 		swap(&array[0], &array[i]);
 		print_array(array, size);
