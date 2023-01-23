@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-*swap - the positions of two elements into an array
+*swap - the positions of two elements into an arry
 *@array: array
 *@item1: array element
 *@item2: array element
@@ -17,7 +17,7 @@ void swap(int *array, int item1, int item2)
 }
 /**
  * shell_sort - function that sorts an array of integers in ascending
- * order using the Shell sort algorithm, using the Knuth sequence
+ * 
  * @size: size of the array
  * @array: list with numbers
  */
